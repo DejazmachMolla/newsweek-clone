@@ -1,23 +1,25 @@
 # Positioning and Floating element
 
-> This project is a clone of the [Old Apple](https://web.archive.org/web/20140301004610/http://www.apple.com/) home page.
+> This project is a clone of the [Newsweek](https://www.newsweek.com/) home page.
 > ![screenshot](https://imgur.com/H6JcW0N.png)
 ## Navigation bar
 
-- The navbar contains the logo, some buttons and a search field
-- All of them have a similar gradient effect
-- The links take adifferent gradient on hover than their unhovered state but keeps the texture of the unhovered state
+- There are two navbars that show in two rows and a third one that shows up while scrolling down a bit
+- Logo resizes itself upon scrolling
+
 
 ## Main Body
 
-- The main body consists of a stretching jambo background image followed by a row of 4 blocks with background images
-- The jambo background image has some transparent images and a link on top of it
+- There is a three column layout body with different height columns below the nav bars
+- The three column layout shrinks to two and one column layouts for smaller screen widths
+- There are In the magazine and Editor's picks sections that change between 4 column and 1 column layouts
+- There are then repetitive sections that change between 3 column and 1 column layouts
+- The 2 column and 1 column layouts of subscribe and newsletter sections then follow
 
 ## Footer
 
-- The footer is a 2 column grid
-- The left column contains two paragraphs htat are a little far from their left edge and are still aligned to the left
-- The right colun contains links separated by a border
+- The footer has 3 rows
+- The top row has left and right aligned content and the others follow normal flow
 
 ## Built With
 
@@ -47,7 +49,7 @@ Give a :star:️ if you like this project!
 
 ## Acknowledgments
 
-- Microverse Building with Backgrounds and Gradients project.
+- Microverse Using Bootstrap project.
 
 ## :memo: License
 
