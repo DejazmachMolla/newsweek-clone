@@ -4,11 +4,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
   <title>Newsweek - News, Analysis, Politics, Business, Technology</title>
 </head>
 
 <body>
+  <div class="wrapper">
+    <header>
+      <div class="top-header">Top with scroll</div>
+      <div class="middle-header">Top whitout scroll</div>
+      <nav class="bottom-header">Here goes the navigation bar</nav>
+    </header>
 
+    <div class="window-row">
+      <div class="container-fluid">
+        <div class="row main-row">
+          <div class="col-lg-9 col-md-12">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 green">
+                green
+              </div>
+              <div class="col-lg-7 col-md-7 yellow">
+                yellow
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-12 red">red</div>
+        </div>
+
+        <div class="row main-row">
+          In the magazine
+        </div>
+
+        <div class="row main-row">
+          Editor's picks
+        </div>
+
+        <div class="row main-row">
+          US
+        </div>
+
+        <div class="row main-row">
+          World
+        </div>
+
+        <div class="row main-row">
+          Business
+        </div>
+
+        <div class="row main-row">
+          Tech and Science
+        </div>
+
+        <div class="row main-row">
+          Culture
+        </div>
+
+        <div class="row main-row">
+          Sports
+        </div>
+
+      </div>
+    </div>
+
+    <div class="window-row">
+      subscribe
+    </div>
+
+    <footer class="window-row">
+      <div class="container-fluid">
+        <div class="row main-row">
+          Upper footer
+        </div>
+        <div class="row main-row">
+          Lower footer
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    var prevScrollpos = 60;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+
+        document.getElementsByClassName("top-header")[0].classList.remove("fixed-top-nav");
+        document.getElementsByClassName("top-header")[0].style.display = "none";
+        // document.getElementsByClassName("imagencontact")[0].style.borderTopLeftRadius = "0";
+      } else {
+        document.getElementsByClassName("top-header")[0].classList.add("fixed-top-nav");
+        document.getElementsByClassName("top-header")[0].style.display = "block";
+        // document.getElementById("text-content").style.display = "none";
+        // document.getElementsByClassName("imagencontact")[0].style.borderTopLeftRadius = "6px";
+      }
+    }
+  </script>
 </body>
 
 </html>
