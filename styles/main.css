@@ -60,6 +60,7 @@ body {
 
 .window-row .main-row:not(:last-child) {
   border-bottom: 1px solid #f4f5f6;
-  padding-bottom: 1em;
-  margin-bottom: 1em;
+  /* padding-bottom: 1em; */
+  /* margin-bottom: 1em; */
 }
+
