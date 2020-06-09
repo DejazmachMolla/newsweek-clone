@@ -9,30 +9,138 @@ body {
   overflow-x: hidden;
 }
 
-.wrapper {
-  background: #f4f5f6;
-  padding: 0 15px;
-}
-
 .top-header {
-  background-color: #f72210;
-  height: 60px;
-  display: none;
-}
-.middle-header {
-  background-color: #f72210;
-  height: 60px;
-}
-.fixed-top-nav {
   position: fixed;
   width: 100%;
   left: 0;
   top: 0;
   z-index: 5;
+  background-color: #f72210;
+  height: 50px;
+  padding: 8px 15px 0;
 }
-.bottom-header {
-  background-color: white;
-  height: 60px;
+
+.right-top-header {
+  text-align: right;
+}
+
+.middle-header, .bottom-header {
+  display: none;
+}
+.logo svg {
+  fill: white;
+  width: 132px;
+}
+.big-logo svg {
+  fill: white;
+}
+.header-btn {
+  font-size: 16px;
+  line-height: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border: none;
+  background: none;
+  font-weight: bold;
+}
+.login-btn {
+  display: none;
+  color: white;
+}
+
+.subscribe-btn {
+  color: black;
+  background: #ffe400;
+  border-radius: 24px;
+}
+
+.person-btn i {
+  font-size: 24px;
+  color: white;
+}
+
+.menu-btn {
+  color: rgba(255,255,255,.55);
+}
+
+.right-middle-header {
+  text-align: right;
+}
+
+.right-middle-header>*{
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.weather-icon {
+  width: 24px;
+  height: 24px;
+
+}
+
+.weather-link, .weather-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.middle-header-row p {
+  color: white;
+}
+.bottom-header li {
+  display: inline-block;
+  list-style: none;
+}
+@media screen and (min-width: 768px) {
+  body {
+      font-size: 15px;
+      line-height: 20px;
+  }
+  .header-btn {
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .login-btn {
+    display: inline-block;
+  }
+  .person-btn {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+  .top-header {
+    display: none;
+  }
+  .middle-header {
+    display: block;
+    height: 95px;
+    padding: 20px 30px 15px;
+    background-color: #f72210;
+  }
+  .fixed-top-nav {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 5;
+  }
+  .bottom-header {
+    display: block;
+    background-color: white;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  .wrapper {
+    background: #f4f5f6;
+    padding: 0 15px;
+  }
 }
 
 .green {
@@ -64,3 +172,6 @@ body {
   /* margin-bottom: 1em; */
 }
 
+.section-title {
+  border-bottom: 1px solid #f4f5f6;
+}
