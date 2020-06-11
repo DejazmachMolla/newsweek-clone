@@ -350,7 +350,7 @@ footer a:hover {
   color: #f72210;
   text-decoration: none;
 }
-.debate-container img {
+.debate-container img, .opinion-container img {
   width: 100%;
 }
 .deco {
@@ -388,6 +388,23 @@ footer a:hover {
   margin: 6px auto;
 }
 
+.opinion-container:not(:last-child) {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.culture-link {
+  margin-bottom: 1rem;
+}
+
+.culture-link a{
+  color: rgba(3,3,3,.5);
+  font: bold 16px/19px "Roboto Condensed",sans-serif;
+}
+
+.culture-link a:hover {
+  color: rgba(3,3,3,.5);
+  text-decoration: none;
+}
 @media screen and (min-width: 768px) {
   body {
       font-size: 15px;
