@@ -165,6 +165,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 5px;
   padding-left: 0;
   margin-left: 0;
+  margin-top: 1em;
 }
 
 .imgnlable {
@@ -405,6 +406,39 @@ footer a:hover {
   color: rgba(3,3,3,.5);
   text-decoration: none;
 }
+
+.more-story * {
+  text-align: left;
+}
+
+.more-story p {
+  display: inline;
+}
+
+.more-story-img-link {
+  float: left;
+  margin-right: .5rem;
+}
+
+.more-story-link {
+  font-size: 17px;
+  line-height: 20px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.more-story-link:hover {
+  text-decoration: underline #f72210;
+  color: black;
+}
+
+.more-stories-title, .more-story>div:not(:last-child)>div {
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
 @media screen and (min-width: 768px) {
   body {
       font-size: 15px;
