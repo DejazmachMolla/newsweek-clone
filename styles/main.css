@@ -534,18 +534,66 @@ footer a:hover {
 .facebook:hover {
   color: #3b5998;
 }
+
 .twitter:hover {
   color: #1da1f2;
 }
+
 .tumblr:hover {
   color: #35465c;
 }
+
 .instagram:hover {
   color: #405de6;
 }
+
 .linkedin:hover {
   color: #0077b5;
 }
+
+.signup-container {
+  background-color: #f4f5f6;
+  margin: auto;
+  width: 90%;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.signup-heading {
+  display: table;
+}
+
+.signup-logo {
+  display: table-cell;
+  vertical-align: middle;
+  /* float: left; */
+  width: 29px;
+  height: 28px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.signup-span {
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+.signup > input {
+  margin-top: 1rem;
+  border: 1px solid #e0e1e1;
+  text-indent: 9px;
+  padding: 3px 0;
+}
+
+.signup > input:focus {
+  outline: none;
+}
+
+.signup > button, .signup > input{
+  display: inline-block;
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) {
   body {
       font-size: 15px;

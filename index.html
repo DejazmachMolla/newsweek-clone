@@ -17,7 +17,7 @@
     <header>
       <div class="top-header">
         <div class="row top-header-row">
-          <div class="logo col-sm-4">
+          <div class="logo col-4 col-sm-3">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60"
               style="enable-background:new 0 0 395.6 60;" xml:space="preserve">
@@ -29,7 +29,7 @@
             </svg>
           </div>
 
-          <div class="right-top-header col-sm-8">
+          <div class="right-top-header col-8 col-sm-9">
             <button class="person-btn header-btn"><i class="fa fa-user-o" aria-hidden="true"></i></button>
             <button class="login-btn header-btn">LOGIN</button>
             <button class="subscribe-btn header-btn">SUBSCRIBE <i class="fa fa-chevron-right"
@@ -384,6 +384,20 @@
               </div>
             </div>
 
+            <div class="signup-container">
+              <div class="signup">
+                <div class="signup-heading">
+                  <img class="signup-logo" src="https://g.newsweek.com/themes/newsweek/favicons/favicon-32x32.png"
+                    alt="signup"> <span class="signup-span">START
+                    YOUR DAY WITH OUR TOP 5 ARTICLES</span>
+                </div>
+
+
+                <input type="text" placeholder="Email address">
+                <button class="subscribe-btn-body header-btn">FREE SIGN UP <i class="fa fa-chevron-right"
+                    aria-hidden="true"></i></button>
+              </div>
+            </div>
 
           </div>
         </div>
@@ -1328,24 +1342,28 @@
     </footer>
   </div>
   <script>
+
     var prevScrollpos = 60;
     window.onscroll = function () {
+      onResizeOrScroll();
+    }
+
+    window.onresize = function () {
+      onResizeOrScroll();
+    }
+
+    function onResizeOrScroll() {
       var currentScrollPos = window.pageYOffset;
-      if (document.body.clientWidth > 992) {
-
-        if (prevScrollpos > currentScrollPos) {
-
-          document.getElementsByClassName("top-header")[0].classList.remove("fixed-top-nav");
-          document.getElementsByClassName("top-header")[0].style.display = "none";
-        } else {
-          document.getElementsByClassName("top-header")[0].classList.add("fixed-top-nav");
-          document.getElementsByClassName("top-header")[0].style.display = "block";
-        }
-      } else {
-        document.getElementsByClassName("top-header")[0].classList.add("fixed-top-nav");
+      if (prevScrollpos < currentScrollPos || window.innerWidth < 992) {
         document.getElementsByClassName("top-header")[0].style.display = "block";
+        document.getElementsByClassName("top-header")[0].classList.add("fixed-top-nav");
+      } else {
+        document.getElementsByClassName("top-header")[0].classList.remove("fixed-top-nav");
+        document.getElementsByClassName("top-header")[0].style.display = "none";
       }
     }
+
+
   </script>
 </body>
 
