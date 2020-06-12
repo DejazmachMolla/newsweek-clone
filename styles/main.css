@@ -112,8 +112,8 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
   width: calc(90% - 66px);
-  font-size: 19px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 19px;
   font-weight: bold;
   font-family: "Roboto Condensed",sans-serif;
   padding-top: 20px;
@@ -156,6 +156,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .block {
   margin-bottom: 1rem;
+}
+
+.featured-stories {
+  margin-top: 60px;
+}
+.top-story {
+  margin-top: 60px;
 }
 
 .section-sub-title {
@@ -587,16 +594,34 @@ footer a:hover {
     height: 60px;
   }
 
+  .bottom-header ul {
+    display: flex;
+    justify-content: center;
+    width: calc(90% - 66px);
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: bold;
+    font-family: "Roboto Condensed",sans-serif;
+    padding-top: 20px;
+  }
+
   .bottom-header::before {
     width: 66px;
     position: absolute;
     top: 95px;
-    right: 15px;
+    right: 0;
     content: "";
     display: block;
     background-color: #f72210;
     border-left: 12px solid white;
     border-top: 13px solid #f72210;
+  }
+
+  .featured-stories {
+    margin-top: 0;
+  }
+  .top-story {
+    margin-top: 0;
   }
 }
 
@@ -604,5 +629,20 @@ footer a:hover {
   .wrapper {
     background: #f4f5f6;
     padding: 0 15px;
+  }
+
+  .bottom-header::before {
+    right: 15px;
+  }
+
+  .bottom-header ul {
+    display: flex;
+    justify-content: center;
+    width: calc(90% - 66px);
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: bold;
+    font-family: "Roboto Condensed",sans-serif;
+    padding-top: 20px;
   }
 }
