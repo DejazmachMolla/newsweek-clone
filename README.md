@@ -1,7 +1,7 @@
 # Positioning and Floating element
 
 > This project is a clone of the [Newsweek](https://www.newsweek.com/) home page.
-> ![screenshot](https://imgur.com/H6JcW0N.png)
+> ![screenshot](images/screenshot.png)
 ## Navigation bar
 
 - There are two navbars that show in two rows and a third one that shows up while scrolling down a bit
