@@ -414,8 +414,12 @@ footer a:hover {
   margin: 6px auto;
 }
 
-.opinion-container:not(:last-child) {
+ul.opinion-group > li:not(:last-child) {
   border-bottom: 1px solid #d9d9d9;
+}
+
+.opinion-container {
+  list-style: none;
 }
 
 .culture-link {
