@@ -61,7 +61,7 @@ footer a:hover {
 }
 
 .header-btn {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 25px;
   padding-left: 10px;
   padding-right: 10px;
@@ -327,14 +327,16 @@ footer a:hover {
   padding-bottom: 1rem;
 }
 
-.window-row .main-row:not(:last-child) {
-  border-bottom: 1px solid #d9d9d9;
+.window-row .main-row > div > h5 {
+  border-top: 1px solid #d9d9d9;
+  padding-top: 1.5rem;
 }
 
-.section-title {
+.section-title h4 {
   border-bottom: 1px solid #d9d9d9;
   text-align: center;
   margin: 1rem 0;
+  padding-bottom: 0.5rem;
 }
 
 .section-title h4 {
@@ -469,51 +471,57 @@ ul.opinion-group > li:not(:last-child) {
   padding-bottom: 1rem;
 }
 
+.sub-news::before, .sub-news::after {
+  content: " ";
+  display: table;
+}
+
+.sub-news::after {
+  clear: both;
+}
+
 .sub-news {
   display: flex;
 }
 
-.subscribe-article {
-  display: flex;
-  flex-direction: column;
+.sub-col {
+  box-sizing: border-box;
+}
+
+.newsletter-col {
+  box-sizing: border-box;
 }
 
 .subscribe-row {
   margin-right: 1em;
 }
 
-.subscribe-box {
-  width: 100%;
-  background-color: #f4f5f6;
-  display: flex;
-  align-items: center;
-  padding: 30px;
-}
 
 .newsletter-article {
   display: flex;
   flex-direction: column;
+  margin-right: 1rem;
+}
+
+.newsletter-row {
+  width: 100%;
 }
 
 .newsletter-box {
-  width: 100%;
   align-items: center;
   display: flex;
-  border: 1px solid #ebebeb;
   border-left: none;
 }
 
 .news-img-container {
-  height: 290px;
-  width: 190px;
   background: url("/images/starting5-homepage.png") center center / cover no-repeat;
 }
 
 .news-text {
-  margin: 0 1rem;
   flex: 1;
-  flex-direction: column;
-  height: 100%;
+  border: 1px solid #ebebeb;
+  padding: 30px;
+  text-align: center;
 }
 
 .news-text input,
@@ -533,8 +541,11 @@ ul.opinion-group > li:not(:last-child) {
 
 .sub-img-container {
   position: relative;
-  padding-bottom: 13px;
-  padding-right: 90px;
+  /* padding-bottom: 13px;
+  padding-right: 90px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .img1-container,
@@ -547,24 +558,37 @@ ul.opinion-group > li:not(:last-child) {
   position: absolute;
   top: 13px;
   left: 80px;
+  left: calc(50%);
 }
 
 .sub-text {
   padding-left: 30px;
+  margin-top: 2rem;
   flex: 1;
 }
 
 .sub-h3 {
   font-weight: bold;
-  line-height: 28px;
-  margin-bottom: 15px;
-  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  font-size: 18px;
 }
 
 .subscribe-btn-body {
   background-color: #f72210;
   color: white;
   border-radius: 3px;
+}
+
+.sub-btn {
+  font-size: 14px;
+  line-height: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border: none;
+  font-weight: bold;
 }
 
 .footer-top-left svg {
@@ -612,7 +636,6 @@ ul.opinion-group > li:not(:last-child) {
   margin: auto;
   width: 90%;
   padding: 1rem;
-  /* margin: 1rem 0 1rem 1rem; */
   margin-top: 1rem;
   margin-bottom: 1rem;
   text-align: center;
@@ -654,6 +677,14 @@ ul.opinion-group > li:not(:last-child) {
   width: 100%;
 }
 
+.subscribe-box {
+  text-align: center;
+}
+
+.fd-c {
+  flex-direction: column;
+}
+
 @media screen and (min-width: 768px) {
   body {
     font-size: 15px;
@@ -661,7 +692,7 @@ ul.opinion-group > li:not(:last-child) {
   }
 
   .header-btn {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
     padding-left: 15px;
     padding-right: 15px;
@@ -674,6 +705,50 @@ ul.opinion-group > li:not(:last-child) {
   .person-btn {
     display: none;
   }
+
+  .news-img-container {
+    flex: none;
+    width: 48%;
+    max-width: 191px;
+  }
+
+  .subscribe-box {
+    width: 100%;
+    background-color: #f4f5f6;
+    display: flex;
+    align-items: center;
+    padding: 21px;
+  }
+
+  .newsletter-box {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .sub-newsletter > div > div {
+    margin-bottom: 40px;
+  }
+
+  .sub-text {
+    text-align: left;
+    margin-top: 0;
+  }
+  
+  .news-text {
+    border-left-width: 0;
+    text-align: left;
+  }
+
+  .img2-container {
+    left: 80px;
+  }
+
+  .sub-img-container {
+    padding-bottom: 13px;
+    padding-right: 90px;
+    align-items: stretch;
+  }
+
 }
 
 @media screen and (min-width: 992px) {
@@ -731,6 +806,19 @@ ul.opinion-group > li:not(:last-child) {
 
   .top-story {
     margin-top: 0;
+  }
+
+  .flex-lg {
+    display: flex;
+  }
+
+  .sub-newsletter::before {
+    left: -30px;
+    right: -30px;
+  }
+
+  .col-lg-7 {
+    width: 58.33333333%;
   }
 }
 
