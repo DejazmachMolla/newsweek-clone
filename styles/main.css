@@ -281,8 +281,8 @@ footer a:hover {
   display: inline-block;
   font-weight: bold;
   color: black;
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 18px;
   margin-top: 20px;
 }
 
@@ -804,6 +804,11 @@ ul.opinion-group > li:not(:last-child) {
 
   .top-story {
     margin-top: 0;
+  }
+
+  .featured-link {
+    font-size: 22px;
+    line-height: 24px;
   }
 
   .flex-lg {
