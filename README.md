@@ -2,7 +2,7 @@
 
 > A clone of the [Newsweek](https://www.newsweek.com/) homepage.
 
-![screenshot](assets/newsweek_capture.png)
+![screenshot](./images/newsweek_capture.png)
 
 A project to practice using Bootstrap.
 
