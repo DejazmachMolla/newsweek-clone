@@ -1,25 +1,14 @@
-# Positioning and Floating element
+# The Newsweek Replica
 
-> This project is a clone of the [Newsweek](https://www.newsweek.com/) home page.
-> ![screenshot](images/screenshot.png)
-## Navigation bar
+> A clone of the [Newsweek](https://www.newsweek.com/) homepage.
 
-- There are two navbars that show in two rows and a third one that shows up while scrolling down a bit
-- Logo resizes itself upon scrolling
+![screenshot](./assets/newsweek_capture.png)
 
+A project to practice using Bootstrap.
 
-## Main Body
+## Live Demo
 
-- There is a three column layout body with different height columns below the nav bars
-- The three column layout shrinks to two and one column layouts for smaller screen widths
-- There are In the magazine and Editor's picks sections that change between 4 column and 1 column layouts
-- There are then repetitive sections that change between 3 column and 1 column layouts
-- The 2 column and 1 column layouts of subscribe and newsletter sections then follow
-
-## Footer
-
-- The footer has 3 rows
-- The top row has left and right aligned content and the others follow normal flow
+[Live Demo Link](https://condescending-saha-4e8669.netlify.app/)
 
 ## Built With
 
@@ -28,29 +17,27 @@
 
 ## Getting Started
 
-**Open index.html in the browser**
+- Clone the project in to your computer using `git clone https://github.com/DejazmachMolla/newsweek-clone.git` 
+- `cd` into the `newsweek` folder
+- Open `index.html` in the browser
 
 ## Authors
 
-:bust_in_silhouette: **@DejazmachMolla**
+:bust_in_silhouette: **Dejazmach Molla**
 
-- Github: [@githubhandle](https://github.com/DejazmachMolla)
-- Twitter: [@twitterhandle](https://twitter.com/DJATSS)
-- Linkedin: [linkedin](https://www.linkedin.com/in/dejazmach-getachew-027aabaa/)
-
-## :handshake: Contributing
-
-Contributions, issues and feature requests are welcome!
-Feel free to check the [issues page](issues/).
+- Github: [@DejazmachMolla](https://github.com/DejazmachMolla)
+- Twitter: [@DJATSS](https://twitter.com/DJATSS)
+- Linkedin: [Dejazmach Molla](https://www.linkedin.com/in/dejazmach-getachew-027aabaa/)
 
 ## Show your support
 
-Give a :star:️ if you like this project!
+Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Microverse Using Bootstrap project.
+- Microverse
+- [https://www.newsweek.com/](https://www.newsweek.com/)
 
-## :memo: License
+## 📝 License
 
 This project is [MIT](lic.url) licensed.

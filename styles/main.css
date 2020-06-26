@@ -26,9 +26,38 @@ footer a {
   color: #666;
 }
 
+.social a {
+  font-size: 24px;
+  padding-right: 1rem;
+}
+
+.culture-link a {
+  color: rgba(3, 3, 3, 0.5);
+  font: bold 16px/19px "Roboto Condensed", sans-serif;
+}
+
+.debator a {
+  color: black;
+  font-weight: bold;
+}
+
+.bottom-header a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 footer a:hover {
   color: black;
   text-decoration: none;
+}
+
+.subscribe-row h5,
+.newsletter-row h5 {
+  color: #f72210;
+  font-weight: bold;
+  line-height: 1.2rem;
+  font-size: 1rem;
 }
 
 .top-header {
@@ -117,12 +146,6 @@ footer a:hover {
   color: white;
 }
 
-.bottom-header a {
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
-}
-
 .bottom-header a:hover {
   color: #f72210;
   text-decoration: none;
@@ -160,9 +183,33 @@ footer a:hover {
   top: 115px;
 }
 
+.signup > button,
+.signup > input {
+  display: inline-block;
+  width: 100%;
+}
+
 .search input {
   width: 80px;
   border: none;
+}
+
+.signup > input {
+  margin-top: 1rem;
+  border: 1px solid #e0e1e1;
+  text-indent: 9px;
+  padding: 3px 0;
+}
+
+.news-text input,
+.news-text button {
+  width: 100%;
+}
+
+.news-text input {
+  text-indent: 9px;
+  padding: 3px 0;
+  border: 1px solid #e0e1e1;
 }
 
 .search input:focus {
@@ -327,6 +374,12 @@ footer a:hover {
   padding-bottom: 1rem;
 }
 
+.main-row h5 {
+  color: #f72210;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
 .window-row .main-row > div > h5 {
   border-top: 1px solid #d9d9d9;
   padding-top: 1.5rem;
@@ -335,18 +388,9 @@ footer a:hover {
 .section-title h4 {
   border-bottom: 1px solid #d9d9d9;
   text-align: center;
-  margin: 1rem 0;
+  margin: 2rem 0 1rem;
   padding-bottom: 0.5rem;
-}
-
-.section-title h4 {
   font-weight: bold;
-}
-
-.main-row h5 {
-  color: #f72210;
-  font-weight: bold;
-  margin-top: 1rem;
 }
 
 .debate-container {
@@ -357,11 +401,6 @@ footer a:hover {
 .debator > div {
   margin: auto;
   padding: auto;
-}
-
-.debator a {
-  color: black;
-  font-weight: bold;
 }
 
 .debator-name {
@@ -428,11 +467,6 @@ ul.opinion-group > li:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.culture-link a {
-  color: rgba(3, 3, 3, 0.5);
-  font: bold 16px/19px "Roboto Condensed", sans-serif;
-}
-
 .culture-link a:hover {
   color: rgba(3, 3, 3, 0.5);
   text-decoration: none;
@@ -471,7 +505,8 @@ ul.opinion-group > li:not(:last-child) {
   padding-bottom: 1rem;
 }
 
-.sub-news::before, .sub-news::after {
+.sub-news::before,
+.sub-news::after {
   content: " ";
   display: table;
 }
@@ -491,11 +526,6 @@ ul.opinion-group > li:not(:last-child) {
 .newsletter-col {
   box-sizing: border-box;
 }
-
-.subscribe-row {
-  margin-right: 1em;
-}
-
 
 .newsletter-article {
   display: flex;
@@ -524,25 +554,12 @@ ul.opinion-group > li:not(:last-child) {
   text-align: center;
 }
 
-.news-text input,
-.news-text button {
-  width: 100%;
-}
-
-.news-text input {
-  text-indent: 9px;
-  padding: 3px 0;
-  border: 1px solid #e0e1e1;
-}
-
 .news-text input:focus {
   outline: none;
 }
 
 .sub-img-container {
   position: relative;
-  /* padding-bottom: 13px;
-  padding-right: 90px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -606,11 +623,6 @@ ul.opinion-group > li:not(:last-child) {
   text-align: right;
 }
 
-.social a {
-  font-size: 24px;
-  padding-right: 1rem;
-}
-
 .facebook:hover {
   color: #3b5998;
 }
@@ -660,21 +672,8 @@ ul.opinion-group > li:not(:last-child) {
   font-weight: bold;
 }
 
-.signup > input {
-  margin-top: 1rem;
-  border: 1px solid #e0e1e1;
-  text-indent: 9px;
-  padding: 3px 0;
-}
-
 .signup > input:focus {
   outline: none;
-}
-
-.signup > button,
-.signup > input {
-  display: inline-block;
-  width: 100%;
 }
 
 .subscribe-box {
@@ -733,7 +732,7 @@ ul.opinion-group > li:not(:last-child) {
     text-align: left;
     margin-top: 0;
   }
-  
+
   .news-text {
     border-left-width: 0;
     text-align: left;
@@ -748,7 +747,6 @@ ul.opinion-group > li:not(:last-child) {
     padding-right: 90px;
     align-items: stretch;
   }
-
 }
 
 @media screen and (min-width: 992px) {
@@ -810,15 +808,11 @@ ul.opinion-group > li:not(:last-child) {
 
   .flex-lg {
     display: flex;
+    min-height: 400px;
   }
 
-  .sub-newsletter::before {
-    left: -30px;
-    right: -30px;
-  }
-
-  .col-lg-7 {
-    width: 58.33333333%;
+  .subscribe-box {
+    padding: 30px;
   }
 }
 
